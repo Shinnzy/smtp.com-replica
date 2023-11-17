@@ -29,7 +29,31 @@
         </ul>
       </div>
     </nav>
-
+    <div class="bg-global-blue flex md:hidden  pt-6 w-full  px-6 pb-4 fixed justify-between border-b-[1px] border-white -mt-1">
+      <div>
+        <img class="md:w-32 w-24" src="images/Asset-2-smtp-allwhite.png" alt="" />
+      </div>
+      <div >
+        <i onclick="toggleclosebtn1()" class="fa-solid fa-bars text-2xl text-white"></i>
+      </div>
+      
+    </div>
+    <div class="hidden fixed ml-24 h-full mobile-nav">
+      <div class="flex flex-col  gap-5 items-end bg-[#1E379A] w-[300px] h-[100%] px-5">
+        <div class="pb-96">
+          <i class="fa-solid fa-xmark text-white text-xl pt-4 px-4" onclick="toggleclosebtn1()"></i>
+          <ul class="text-gray-50 flex md:flex-row flex-col items-end gap-5 text-[13px] pt-[60px]">
+            <li class=""><a href="#">pricing</a></li>
+            <li><a href="#">solutions</a></li>
+            <li><a href="#">transactional Email</a></li>
+            <li><a href="#">Email API</a></li>
+            <li><a href="#">Resources</a></li>
+            <li class="text-white"><a href="#">login</a></li>
+            <li class="px-8 py-3 bg-white w-[270px] text-primary-blue font-semibold text-end"><a href="#">sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <section class="md:h-[120lvh] h-[90lvh] md:py-48 py-16 bg-global-blue">
       <div class="flex md:flex-row flex-col md:px-40 px-8 justify-between">
         <div class="md:w-96 w-[95%] items-center">
@@ -190,122 +214,122 @@
         </div>
       </div>
     </section>
-    <section class="pt-32">
-      <div class="pt-40 bg-gray-50 h-[115lvh]">
+    <section class="md:pt-32 pt-24">
+      <div class="md:pt-40 pt-[100px] bg-gray-50 md:h-[115lvh] h-[200lvh]">
         <div class="text-global-blue font-bold text-4xl  text-center md:w-auto pl-6 w-[95%]">
           Use SMTP for all of your email sending needs.
         </div>
-        <div class="md:grid grid-cols-3 grid-rows-2 p-24 md:px-44 gap-2 ">
-          <div class=" md:flex gap-2 w-[250px] ">
-            <div>
+        <div class="md:grid grid-cols-3 grid-rows-2 pl-4 md:px-44 md:gap-2  ">
+          <div class=" md:flex gap-2 md:w-[250px] w-[95%] mt-12 md:mt-0">
+            <div class="  ">
               <img
-                class="md:w-28 w-[]"
+                class="md:w-28 w-[50px] mx-auto "
                 src="images/notifications hand.png"
                 alt=""
                 srcset=""
               />
             </div>
-            <div>
-              <p class="text-primary-blue font-semibold tracking-widest text-xs">NOTIFICATIONS</p>
-              <p class="py-2 text-xs text-gray-600">
+            <div class="text-center md:text-left mt-4 md:mt-0 " >
+              <p class="text-primary-blue font-semibold tracking-widest md:text-xs  ">NOTIFICATIONS</p>
+              <p class="py-2 md:text-xs text-gray-600">
                 Send follow up emails in sync with web or mobile service
                 notifications.
               </p>
             </div>
           </div>
-          <div class="flex gap-2 w-[250px]">
+          <div class="md:flex gap-2 md:w-[250px] w-[95%] mt-8 md:mt-0">
             <div>
-              <img class="w-28" src="images/add profile.png" alt="" />
+              <img class="md:w-28 w-[50px] mx-auto" src="images/add profile.png" alt="" />
             </div>
-            <div>
-              <p class="text-primary-blue font-semibold tracking-widest text-xs">REGISTRATION EMAILS</p>
-              <p class="py-2 text-xs text-gray-600">
+            <div class="text-center md:text-left mt-4 md:mt-0">
+              <p class="text-primary-blue font-semibold tracking-widest md:text-xs">REGISTRATION EMAILS</p>
+              <p class="py-2 md:text-xs text-gray-600">
                 Increase sign ups by reducing opt in confirmation latency and
                 improve onboarding metrics.
               </p>
             </div>
           </div>
-          <div class="flex gap-2 w-[250px]">
+          <div class="md:flex gap-2 md:w-[250px] w-[95%]">
             <div>
-              <img class="w-28" src="images/profile exclamation.png" alt="" />
+              <img class="md:w-28 w-[50px] mx-auto" src="images/profile exclamation.png" alt="" />
             </div>
-            <div>
-              <p class="text-primary-blue font-semibold semibold tracking-widest text-xs">
+            <div class="text-center md:text-left  mt-4 md:mt-0">
+              <p class="text-primary-blue font-semibold semibold tracking-widest md:text-xs">
                 AUTHENTICATION EMAILS
               </p>
-              <p class="py-2 text-xs text-gray-600">
+              <p class="py-2 md:text-xs text-gray-600 ">
                 Keep users safe by sending authentication emails into inboxes on
                 time..
               </p>
             </div>
           </div>
-          <div class="flex gap-2 w-[250px] py-3">
+          <div class="md:flex gap-2 md:w-[250px] w-[95%] py-3">
             <div>
-              <img class="w-28" src="images/checklist.png" alt="" />
+              <img class="md:w-28 w-[50px] mx-auto" src="images/checklist.png" alt="" />
             </div>
-            <div>
-              <p class="text-primary-blue font-semibold semibold tracking-widest text-xs">ORDER CONFIRMATIONS</p>
-              <p class="py-2 text-xs text-gray-600">
+            <div class="text-center md:text-left  mt-4 md:mt-0">
+              <p class="text-primary-blue font-semibold semibold tracking-widest md:text-xs">ORDER CONFIRMATIONS</p>
+              <p class="py-2 md:text-xs text-gray-600">
                 Build brand value and credibility by sending order and billing
                 details on time.
               </p>
             </div>
           </div>
-          <div class="flex gap-4 w-[250px] py-3 ">
+          <div class="md:flex gap-4 md:w-[250px] w-[95%]  ">
             <div>
-              <img class="w-28" src="images/mouse.png" alt="" />
+              <img class="md:w-28 w-[50px] mx-auto" src="images/mouse.png" alt="" />
             </div>
-            <div>
-              <p class="text-primary-blue font-semibold semibold tracking-widest text-xs">STATUS UPDATES</p>
-              <p class="py-2 text-xs text-gray-600">
+            <div class="text-center md:text-left  mt-4 md:mt-0">
+              <p class="text-primary-blue font-semibold semibold tracking-widest md:text-xs">STATUS UPDATES</p>
+              <p class="py-2 md:text-xs text-gray-600">
                 Bring users back by sending on-time status updates on their
                 account and product usage.
               </p>
             </div>
           </div>
-          <div class="flex gap-2 w-[250px] py-3">
+          <div class="md:flex gap-2 md:w-[250px] w-[95%] py-3">
             <div>
-              <img class="w-28" src="images/checklist with biro.png" alt="" />
+              <img class="md:w-28 w-[50px] mx-auto" src="images/checklist with biro.png" alt="" />
             </div>
-            <div>
-              <p class="text-primary-blue font-semibold semibold tracking-widest text-xs">POLICY CHANGE EMAILS</p>
-              <p class="py-2 text-xs text-gray-600">
+            <div class="text-center md:text-left  mt-4 md:mt-0">
+              <p class="text-primary-blue font-semibold semibold tracking-widest md:text-xs">POLICY CHANGE EMAILS</p>
+              <p class="py-2 md:text-xs text-gray-600">
                 Ensure critical policy change information emails get in front of
                 your users.
               </p>
             </div>
           </div>
         </div>
-        <div class="bg-global-blue w-24 h-10 mx-auto py-2 text-center">
+        <div class="bg-global-blue w-24 h-10 mx-auto py-2 text-center mt-8 md:mt-0">
           <button class="text-center text-white">Sign Up</button>
         </div>
       </div>
     </section>
     <section>
       <div class="pt-24">
-        <div class="text-global-blue font-bold text-3xl text-center">
+        <div class="text-global-blue font-bold text-3xl text-center ">
           Why Businesses Trust SMTP
         </div>
         <div class="text-global-blue font-bold text-4xl text-center">___</div>
-        <div class="flex px-32 pt-20">
-          <div class="w-[600px] m-8">
+        <div class="md:flex md:px-32 pt-20">
+          <div class="md:w-[600px] w-[75%] m-8 mx-auto">
             <p class="text-blue-800">"Always delivers"</p>
             <p class="text-sm text-gray-600 py-1">
               It is easy to set up, secure and gives me analytics that helps me
               keep my lists up to date. It just works.
             </p>
-            <div class="flex">
-              <p class="text-sm text-gray-600 py-2 w-[180px]">G2 Crowd verified review</p>
-              <p class="flex py-3">
-                <i class=" text-xs text-global-green fa-solid fa-star"></i>
-                <i class="text-xs text-global-green fa-solid fa-star"></i>
-                <i class="text-xs text-global-green fa-solid fa-star"></i>
-                <i class=" text-xs text-global-green fa-solid fa-star"></i>
-                <i class="text-xs text-global-green fa-solid fa-star"></i>
+            <div class="flex ">
+              <p class="text-sm text-gray-600 py-2 w-[180px] ">G2 Crowd verified review</p>
+              <p class="flex py-3 ">
+                <i class=" md:text-xs text-global-green fa-solid fa-star"></i>
+                <i class="md:text-xs text-global-green fa-solid fa-star"></i>
+                <i class="md:text-xs text-global-green fa-solid fa-star"></i>
+                <i class=" md:text-xs text-global-green fa-solid fa-star"></i>
+                <i class="md:text-xs text-global-green fa-solid fa-star"></i>
               </p>
             </div>
           </div>
-          <div class="w-[650px] m-8">
+          <div class="md:w-[650px] w-[75%] m-8 mx-auto">
             <p class="text-blue-800">"Great results"</p>
             <p class="text-sm text-gray-600 py-1">
               Deliverability is top of the line. Their servers seem to
@@ -314,15 +338,15 @@
             <div class=" flex">
               <p class="text-sm  text-gray-600 py-2 w-[180px] ">G2 Crowd verified review</p>
               <p class="flex py-3">
-                <i class=" text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-global-green fa-solid fa-star"></i>
-                <i class=" text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-gray-300 fa-solid fa-star"></i>
+                <i class=" md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class=" md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-gray-300 fa-solid fa-star"></i>
               </p>
             </div>
           </div>
-          <div class="w-[700px] m-8">
+          <div class="md:w-[700px] w-[75%] m-8 mx-auto">
             <p class="text-blue-800">"Best infrastructure"</p>
             <p class="text-sm text-gray-600 py-1">
               Very good infrastructure with white-listing dedicated sending IPs
@@ -331,34 +355,73 @@
             <div class="tracking-tight flex w[800px]">
               <p class="w-[180px] text-gray-600 py-2 text-sm">G2 Crowd verified review</p>
               <p class="flex py-3">
-                <i class=" text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-global-green fa-solid fa-star"></i>
-                <i class="text-sm text-gray-300 fa-solid fa-star"></i>
+              <i class=" md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-global-green fa-solid fa-star"></i>
+                <i class="md:text-sm text-gray-300 fa-solid fa-star"></i>
               </p>
             </div>
           </div>
         </div>
-        <div class="flex px-32 pt- text-sm">
-          <p class="w-[950px] text-gray-600 m-8">
+        <div class="md:flex md:px-32 pt- text-sm mx-auto md:mx-0">
+          <p class="md:w-[950px] text-gray-600 m-8 ">
             There was as a marked improvement in our email deliverability with
             SMTP, and we scaled our email marketing program from under 1 million
             to over 5 million emails a month while preserving sender reputation.
           </p>
-          <p class="w-[850px] text-gray-600 m-8">
+          <div class="md:hidden flex w-[200px] gap-2 mx-auto">
+            <div>
+              <img
+                class="rounded-full w-[70px] object-cover"
+                src="images/img-tim-trust-smtp-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="py-4  gap-2">
+              <p class="text-sm">Tim Driver</p>
+              <p class="text-xs text-gray-600">CEO,Retirement Jobs</p>
+            </div>
+          </div>
+          <p class="md:w-[850px] text-gray-600 m-8">
             What an improved customer service experience! I’ve been with you
             guys for several years now, and today’s help was speedy via both
             online chat and telephone. I’m relieved and happy!
           </p>
-          <p class="w-[950px] text-gray-600 m-8">
+          <div class=" md:hidden flex w-[216px] gap-2 mx-auto ">
+            <div>
+              <img
+                class="rounded-full w-[70px] object-cover"
+                src="images/img-cynthia-trust-smtp-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="py-4 ">
+              <p class="text-sm">Cynthia Cross</p>
+              <p class="text-xs text-gray-600">Hagen/Sinclair Research</p>
+            </div>
+          </div>
+          <p class="md:w-[950px] text-gray-600 m-8">
             Service is fast, friendly and helpful. They’re always willing to
             work with us to resolve any issues or improve our results. They help
             us improve our deliverability and make sure our emails get to
             inboxes.
           </p>
+          <div class="flex w-[220px] gap-2 md:hidden mx-auto">
+            <div>
+              <img
+                class="rounded-full w-[70px] object-cover"
+                src="images/img-leslie-trust-smtp-min.jpg"
+                alt=""
+              />
+            </div>
+            <div class="py-4">
+              <p class="text-sm">Leslie Stubblefield</p>
+              <p class="text-xs text-gray-600">Insurance Media Services</p>
+            </div>
+          </div>
         </div>
-        <div class="flex px-36 gap-36">
+        <div class="md:flex px-36 gap-36 hidden ">
           <div class="flex w-[200px] gap-2">
             <div>
               <img
@@ -422,27 +485,27 @@
     </section>
     <section>
       <div class="bg-blue-950 ">
-        <div class=" pt-28 flex px-[135px] gap-20">
-          <div class="w-[230px]">
+         <div class=" pt-28 md:flex md:px-[135px] md:gap-20 pl-6 md:">
+           <div class="md:w-[230px]">
             <div>
               <img class="w-24" src="images/Asset-2-smtp-allwhite.png" alt="" />
             </div>
-            <p class="text-white text-xs py-4">
+            <p class="text-white md:text-xs text-sm py-4">
               SMTP.com is a premium email delivery and email relay solution that
               enables you to send and track high volume emails effortlessly.
               
             </p>
-            <div class="flex gap-2">
+            <div class="flex gap-2 mt-10 md:mt-0">
               <i class="  bg-white text-xl text-primary-blue  fa-brands fa-square-facebook"></i>
               <i class="bg-white text-xl text-primary-blue fa-brands fa-square-twitter"></i>
               <i class=" bg-white text-xl text-primary-blue fa-brands fa-linkedin"></i>
             </div>
             
-          </div>
-          <div class="text-white  text-xs w-[165px]">
+           </div>
+           <div class="text-white  md:text-xs hidden md:block w-[165px]">
             <p class="font-semibold">— SERVICES</p>
             <div>
-              <ul class="text-xs py-2">
+              <ul class="md:text-xs py-2">
                 <li class="py-1" >Email Relay API</li>
                 <li class="py-1">Transactional email</li>
                 <li class="py-1">SMTP for developers</li>
@@ -452,9 +515,9 @@
               </ul>
             </div>
           </div>
-          <div class="text-white  text-xs w-[153px]">
+          <div class="text-white  md:text-xs hidden md:block w-[153px]">
             <p class="font-semibold">— GET STARTED</p>
-            <ul class="text-xs py-2">
+            <ul class="md:text-xs py-2">
               <li class="py-1">Pricing</li>
               <li class="py-1">Free Quote</li>
               <li class="py-1">SMTP for startups</li>
@@ -462,9 +525,9 @@
               <li class="py-1">Ingretions</li>
             </ul>
           </div>
-          <div class="text-white   text-xs w-[193px]">
+          <div class="text-white   md:text-xs hidden md:block w-[193px]">
             <p class="font-semibold">— ABOUT</p>
-            <ul class="text-xs py-2">
+            <ul class="md:text-xs py-2">
               <li class="py-1">About us</li>
               <li class="py-1">Why SMTP</li>
               <li class="py-1">Contact us</li>
@@ -473,9 +536,9 @@
               <li class="py-1">Affiliate Program</li>
             </ul>
           </div>
-          <div class="text-white  text-xs w-[250px]">
+          <div class="text-white  md:text-xs hidden md:block w-[250px]">
             <p class="font-semibold">— LEGAL</p>
-            <ul class="text-xs py-2">
+            <ul class="md:text-xs py-2">
               <li class="py-1" >Privacy policy</li>
               <li class="py-1">Terms and conditions</li>
               <li class="py-1">Partner program policy</li>
@@ -484,22 +547,85 @@
               <li class="py-1">Cookie policy</li>
             </ul>
           </div>
-        </div>
-        <div class="text-white flex text-xs justify-between px-32 py-10">
-          <div>
-            <p>© 2017 - 2023 J2 Global Canada, Inc., a Ziff Davis company. All rights reserved.</p>
-            <p>SMTP.com is a trademark or registered trademark of Ziff Davis.</p>
-          </div>
-          <div>
-            <p>Made with ❤ in Ottawa, Canada</p>
+           
+         </div>
+          
+          <div class=" flex md:hidden w-[90%] justify-between mt-10 ">
+             <div class="text-white  md:text-xs ">
+              <p class="font-semibold">— SERVICES</p>
+              <div>
+                <ul class="text-sm py-4">
+                  <li class="py-2" >Email Relay API</li>
+                  <li class="py-2">Transactional email</li>
+                  <li class="py-2">SMTP for developers</li>
+                  <li class="py-2">SMTP for marketers</li>
+                  <li class="py-2">Managed delivery</li>
+                 
+                </ul>
+              </div>
+             </div>
+             <div class="text-white  md:text-xs ">
+              <p class="font-semibold">— GET STARTED</p>
+              <ul class="text-sm py-4">
+                <li class="py-2">Pricing</li>
+                <li class="py-1">Free Quote</li>
+                <li class="py-2">SMTP for startups</li>
+                <li class="py-2">API documentation</li>
+                <li class="py-2">Ingretions</li>
+              </ul>
+             </div>            
+           </div>
+           <div class=" flex md:hidden w-[95%] justify-between mt-10"   >
+             <div class="text-white ">
+              <p class="font-semibold">— ABOUT</p>
+              <ul class="md:text-xs py-4 text-sm">
+                <li class="py-2">About us</li>
+                <li class="py-2">Why SMTP</li>
+                <li class="py-2">Contact us</li>
+                <li class="py-2">Resource center</li>
+                <li class="py-2">Email Deliverability Blog</li>
+                <li class="py-2">Affiliate Program</li>
+              </ul>
+            </div>
+            <div class="text-white ">
+              <p class="font-semibold">— LEGAL</p>
+              <ul class="text-sm py-2">
+                <li class="py-2" >Privacy policy</li>
+                <li class="py-2">Terms and conditions</li>
+                <li class="py-2">Partner program policy</li>
+                <li class="py-2">Code of ethics and business</li>
+                <li class="py-2">Anti-Spam policy</li>
+                <li class="py-2">Cookie policy</li>
+              </ul>
+            </div>
+           </div>
+           <div class="text-white md:flex md:text-xs justify-between md:px-32 md:py-10  md:text-left text-center md:mt-0 mt-8 md:w-auto w-[95%] px-2 ">
+            <div>
+              <p>© 2017 - 2023 J2 Global Canada, Inc., a Ziff Davis company. All rights reserved.</p>
+              <p>SMTP.com is a trademark or registered trademark of Ziff Davis.</p>
+            </div>
+            <div class="md:mt-0 py-5"> 
+              <p>Made with ❤ in Ottawa, Canada</p>
+            </div>
           </div>
         </div>
       </div>
+        
     </section>
   <div class="bg-primary-blue fixed right-2 bottom-2 text-center p-4   text-white ">
     
     <p class="flex items-center"><i class="text-2xl px-2 font-thin fa-regular fa-envelope"></i>Contact us</p>
     
   </div>
+  <script>
+    function toggleclosebtn1() {
+      const mobileNav = document.querySelector('.mobile-nav');
+      if (mobileNav.classList.toggle === 'hidden') {
+        mobileNav.classList.toggle('block');
+      }else{
+        mobileNav.classList.toggle('hidden');
+      }
+    }
+  </script> 
   </body>
 </html>
