@@ -607,6 +607,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -757,6 +761,22 @@ video {
 
 .w-\[9\%\] {
   width: 9%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[70\] {
+  width: 70;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[80\%\] {
+  width: 80%;
 }
 
 .grid-cols-3 {
